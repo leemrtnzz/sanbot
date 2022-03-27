@@ -7,6 +7,7 @@
  */
 
 const chromeArgs = [
+    '--multi-device flag',
     '--disable-2d-canvas-clip-aa',
     '--disable-2d-canvas-image-chromium',
     '--disable-3d-apis',
@@ -89,8 +90,9 @@ const chromeArgs = [
  */
 export default (headless, start) => {
     return {
-        sessionId: 'session',
+        sessionId: 'SANBOT',
         headless: headless,
+        multiDevice: true,
         useChrome: true,
         qrTimeout: 0,
         authTimeout: 0,

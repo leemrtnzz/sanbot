@@ -144,32 +144,37 @@ const start = async (client = new Client()) => {
             let js = jadwal.subuh.substring(0,2)
             let ms = jadwal.subuh.substring(3,6)
             scheduleJob(`${ms} ${js} * * *`, async () => {
-                client.sendText(ownerNumber, doi `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(ownerNumber, `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(doi, `Sholat Subuh Sayang❤️💖💗`)
             })
             // Dzuhur
             let jd = jadwal.dzuhur.substring(0,2)
             let md = jadwal.dzuhur.substring(3,6)
             scheduleJob(`${md} ${jd} * * *`, async () => {
-                client.sendText(ownerNumber, doi `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(ownerNumber, `Sholat Dzuhur Sayang❤️💖💗`)
+                client.sendText(doi, `Sholat Dzuhur Sayang❤️💖💗`)
             })
             // Ashar
             let ja = jadwal.ashar.substring(0,2)
             let ma = jadwal.ashar.substring(3,6)
             scheduleJob(`${ma} ${ja} * * *`, async () => {
-                client.sendText(ownerNumber, doi `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(ownerNumber, `Sholat Ashar Sayang❤️💖💗`)
+                 client.sendText(doi, `Sholat Ashar Sayang❤️💖💗`)
             })
             // Maghrib
             let jm = jadwal.maghrib.substring(0,2)
             let mm = jadwal.maghrib.substring(3,6)
             scheduleJob(`${mm} ${jm} * * *`, async () => {
-                client.sendText(ownerNumber, doi `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(ownerNumber, `Sholat Maghrib Sayang❤️💖💗`)
+                client.sendText(doi, `Sholat Maghrib Sayang❤️💖💗`)
             })
             // Isya
             let ji = jadwal.isya.substring(0,2)
             let mi = jadwal.isya.substring(3,6)
             scheduleJob(`${mi} ${ji} * * *`, async () => {
                 // const chats = await client.getAllChats()
-                client.sendText(ownerNumber, doi `Sholat Subuh Sayang❤️💖💗`)
+                client.sendText(ownerNumber, `Sholat Isya Sayang❤️💖💗`)
+                client.sendText(doi, `Sholat Isya Sayang❤️💖💗`)
                 // client.sendText(ownerNumber, `Chat deleted : ${deleted}\nChat cleared : ${cleared}`)
             })
         } catch (e) {
