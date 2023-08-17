@@ -1,0 +1,13 @@
+{
+    "result": true,
+    "data": {
+        "trxid": "some1d",
+        "data": "087800001233",
+        "code": "SHNX25",
+        "service": "Xl 25.000",
+        "status": "waiting",
+        "note": "",
+        "balance": 100000,
+        "price": 25000
+    },
+    "message": "Pesanan berhasil, pesanan akan diproses."
